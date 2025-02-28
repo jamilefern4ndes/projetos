@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <p>
+            <input type="number" name="valor" id="valor1" autocomplete="none" placeholder="v1">
+            +
+            <input type="number" name="valor" id="valor2" autocomplete="none" placeholder="v2">
+           
+        </p>
+        <p><input type="button" value="calcular" onclick="calcular()"></p>
+        <div id="res"> </div>
+    </main>
+</body>
+<script>
+    function calcular(){
+        var n1 = Number(document.getElementById('valor1').value)
+        var n2 = Number(document.getElementById('valor2').value)
+        var res = document.getElementById('res')
+        var calc = n1 + n2
+        res.style.borderBottom = '1px solid white'
+        res.innerHTML = calc
+    }
+</script>
+</html>

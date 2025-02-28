@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluladora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body onresize="mudouformato()">
+    <header>
+        <h1>CALCULATOR</h1>
+        <p>
+            diferentes calculadoras para voçê
+        </p>
+    </header>
+    <menu>
+        <span class="material-symbols-outlined" id="menu" onclick="clickmenu()">
+            menu
+        </span>
+        <nav>
+            <a href="paginas/soma/soma.html" class="botao" onclick="reagrupar()" target="frame">Somar</a>
+            
+            <a href="paginas/subtrair/subtrair.html" class="botao" onclick="reagrupar()" target="frame">Subtrair</a>
+
+            <a href="paginas/multiplicacao/multiplicar.html" class="botao" onclick="reagrupar()" target="frame">Multiplicar</a>
+
+            <a href="paginas/divisão/divisão.html" class="botao" onclick="reagrupar()" target="frame">Dividir</a>
+
+            <a href="paginas/percentagem/percentagem.html" class="botao" onclick="reagrupar()" target="frame">Porcentagem</a>
+        </nav>
+    </menu>
+    <main>
+        <iframe src="paginas/inicio.html" frameborder="0" name="frame" >
+        </iframe>
+    </main>
+</body>
+<script src="script.js"> </script>
+</html>

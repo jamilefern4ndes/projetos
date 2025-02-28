@@ -27,7 +27,7 @@ function clickmenu(){
     if(window.innerWidth<600 && nav.style.display =='none'){
         nav.style.display = 'flex'
     }
-    else if (window.innerWidth<600 && nav.style.display =='flex'){
+    else if (window.innerWidth<600){
         nav.style.display = 'none'
     }
 }

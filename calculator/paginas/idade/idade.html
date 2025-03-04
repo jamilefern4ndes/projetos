@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        input{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body >
+    <main>
+        <p>
+            Ano de nascimento:
+        </p>
+        <p>
+            <input type="number" name="valor" id="ano" autocomplete="none" value="2000">
+        </p>
+        <p><input type="button" value="calcular" onclick="calcular()"></p>
+        <div id="res"> </div>
+    </main>
+</body>
+<script>
+  
+    function calcular(){ 
+        var atual = new Date()
+        var ano = atual.getFullYear()
+        var nascimento = Number(document.getElementById('ano').value)
+        var res = document.getElementById('res')
+        var idade = ano - nascimento
+        res.innerText = idade
+    }
+</script>
+</html>

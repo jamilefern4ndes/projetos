@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, gray, lightgray, transparent);
+    padding: 10px;
+    text-shadow: 0px 0px 3px black;
+}
+
+main{
+    padding: 10px;
+    height: calc(100vh - 129px);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.form{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.form button{
+    padding: 2px 5px;
+    background-color: black;
+    color: white;
+}
+
+legend{
+    font-size: 14px;
+    color: gray;
+}
+#telaMudanca{
+    border: 1px dashed black;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    align-self: center;
+    margin-top: 10vh;
+}
+
+footer{
+    text-align: center;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.cor1{
+    background-color: blue;
+}
+.cor2{
+    background-color: lime;
+}
+.cor3{
+    background-color: lightseagreen;
+}
+.cor4{
+    background-color: yellow;
+}
+.cor5{
+    background-color: red;
+}
+.cor6{
+    background-color: fuchsia;
+}
+.cor7{
+    background-color: darkgreen;
+}

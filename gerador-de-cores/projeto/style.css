@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+header{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background-color: darkcyan;
+}
+section.telaDeCor{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.5s ease
+}
+div#codCor{
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-size: 1.2em;
+    padding: 7px;
+    border-radius: 10px;
+    display: none;
+}
+#btnGerarCor{
+    margin: 5px;
+    background-color: darkcyan;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#btnGerarCor:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.308);
+}
+footer{
+    background-color: darkcyan;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+}

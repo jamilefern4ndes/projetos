@@ -1,0 +1,11 @@
+Gerador de Cores Aleatórias 
+
+ Descrição do projeto:
+Crie uma página onde, ao clicar em um botão, uma nova cor aleatória é gerada e aplicada ao fundo. O usuário também pode copiar o código da cor para usar em seus projetos.  
+
+ Funcionalidades:
+- Gerar uma cor aleatória em **HEX** e aplicar ao fundo da página.
+- Exibir o código da cor na tela.
+- Botão para copiar a cor gerada para a área de transferência.  
+
+ 

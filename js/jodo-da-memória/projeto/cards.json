@@ -1,0 +1,28 @@
+{
+  "cartas": [
+    {
+      "nome": "carta 01",
+      "cor": "green"
+    },
+    {
+      "nome": "carta 02",
+      "cor": "blue"
+    },
+    {
+      "nome": "carta 03",
+      "cor": "red"
+    },
+    {
+      "nome": "carta 01",
+      "cor": "green"
+    },
+    {
+      "nome": "carta 02",
+      "cor": "blue"
+    },
+    {
+      "nome": "carta 03",
+      "cor": "red"
+    }
+  ]
+}

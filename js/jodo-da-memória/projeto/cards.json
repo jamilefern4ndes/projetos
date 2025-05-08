@@ -13,6 +13,10 @@
       "cor": "red"
     },
     {
+      "nome": "carta 04",
+      "cor": "gray"
+    },
+    {
       "nome": "carta 01",
       "cor": "green"
     },
@@ -23,6 +27,10 @@
     {
       "nome": "carta 03",
       "cor": "red"
+    },
+    {
+      "nome": "carta 04",
+      "cor": "gray"
     }
   ]
 }

@@ -2,35 +2,43 @@
   "cartas": [
     {
       "nome": "carta 01",
-      "cor": "green"
+      "cor": "green",
+      "img" : "../imagens/bart.jpeg"
     },
     {
       "nome": "carta 02",
-      "cor": "blue"
+      "cor": "blue",
+      "img" : "../imagens/lisa.jpeg"
     },
     {
       "nome": "carta 03",
-      "cor": "red"
+      "cor": "red",
+      "img" : "../imagens/homer.jpeg"
     },
     {
       "nome": "carta 04",
-      "cor": "gray"
+      "cor": "gray",
+      "img" : "../imagens/marge.jpeg"
     },
     {
       "nome": "carta 01",
-      "cor": "green"
+      "cor": "green",
+      "img" : "../imagens/bart.jpeg"
     },
     {
       "nome": "carta 02",
-      "cor": "blue"
+      "cor": "blue",
+      "img" : "../imagens/lisa.jpeg"
     },
     {
       "nome": "carta 03",
-      "cor": "red"
+      "cor": "red",
+      "img" : "../imagens/homer.jpeg"
     },
     {
       "nome": "carta 04",
-      "cor": "gray"
+      "cor": "gray",
+      "img" : "../imagens/marge.jpeg"
     }
   ]
 }

@@ -4,7 +4,6 @@ let carta2 = ''
 let pontos = 0
 let acertos = []
 
-
 //pegar dados e criar as cartas
 const url = 'cards.json'
 function pegarDados() {
@@ -79,8 +78,22 @@ function comparar(c1, c2){
         carta1 = ''
         carta2 = ''
     }
-    setTimeout(() => {
-        pegarDados()
+    setTimeout(() => { 
+        if (acertos.length === 4){
+            fimDeJogo()
+        }else{
+            pegarDados() 
+        }
     },2000)
 }
+
+
+function fimDeJogo(){
+    sessaoFinalizado.style.display = 'flex'
+    textoFinal.textContent = `você demorou ${seg} segundos para achar todas as peças!`
+}
+function reiniciar(){
+    location.reload()
+}
+
 

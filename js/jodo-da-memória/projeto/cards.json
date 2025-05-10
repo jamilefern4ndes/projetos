@@ -3,42 +3,42 @@
     {
       "nome": "carta 01",
       "cor": "green",
-      "img" : "../imagens/bart.jpeg"
+      "img" : "bart.jpeg"
     },
     {
       "nome": "carta 02",
       "cor": "blue",
-      "img" : "../imagens/lisa.jpeg"
+      "img" : "lisa.jpeg"
     },
     {
       "nome": "carta 03",
       "cor": "red",
-      "img" : "../imagens/homer.jpeg"
+      "img" : "homer.jpeg"
     },
     {
       "nome": "carta 04",
       "cor": "gray",
-      "img" : "../imagens/marge.jpeg"
+      "img" : "marge.jpeg"
     },
     {
       "nome": "carta 01",
       "cor": "green",
-      "img" : "../imagens/bart.jpeg"
+      "img" : "bart.jpeg"
     },
     {
       "nome": "carta 02",
       "cor": "blue",
-      "img" : "../imagens/lisa.jpeg"
+      "img" : "lisa.jpeg"
     },
     {
       "nome": "carta 03",
       "cor": "red",
-      "img" : "../imagens/homer.jpeg"
+      "img" : "homer.jpeg"
     },
     {
       "nome": "carta 04",
       "cor": "gray",
-      "img" : "../imagens/marge.jpeg"
+      "img" : "marge.jpeg"
     }
   ]
 }

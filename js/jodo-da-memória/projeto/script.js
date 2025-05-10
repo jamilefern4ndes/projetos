@@ -36,37 +36,30 @@ function gerarCartas(cartas){
 
     //manter cartas viradas quando acertadas
     if (acertos.includes(cartas.cor)) {
-        carta.style.background = cartas.cor
+        carta.style.background = `url(../imagens/${cartas.img})`
     }
 
     //click
     carta.addEventListener('click', () => {
-        if (carta.style.background == cartas.cor){
-            carta.classList.toggle('virada')
-            carta.style.background = "url('../imagens/carta.png')"
-
-        }else{
-            carta.classList.toggle('virada')
+        carta.classList.toggle('virada')
             setTimeout(() => {
-            carta.style.background = cartas.cor
-        }, 550)
-        
+            carta.style.background = `url(../imagens/${cartas.img})`
+            }, 550)
         if (carta1 === '') {
-            carta1 = cartas.cor
+            carta1 = cartas.img
             console.log('carta1: ' + carta1)
          } 
         else if (carta1 != ''){
-            carta2 = cartas.cor
+            carta2 = cartas.img
             console.log ('carta2: '+ carta2)
-            comparar(carta1, carta2)
-        }
+            comparar(carta1, carta2, cartas.cor)
         }
     })
 }
-function comparar(c1, c2){
+function comparar(c1, c2, cor){
     if (c1 === c2){ 
         pontos ++ 
-        acertos.push(c1)
+        acertos.push(cor)
         console.log ('cartas iguais')
         console.log ('pontuação: ' + pontos)
         console.log (acertos)
@@ -79,7 +72,7 @@ function comparar(c1, c2){
         carta2 = ''
     }
     setTimeout(() => { 
-        if (acertos.length === 4){
+        if (pontos == 4){
             fimDeJogo()
         }else{
             pegarDados() 
@@ -89,11 +82,9 @@ function comparar(c1, c2){
 
 
 function fimDeJogo(){
-    sessaoFinalizado.style.display = 'flex'
-    textoFinal.textContent = `você demorou ${seg} segundos para achar todas as peças!`
-}
-function reiniciar(){
+    console.log('final')
     location.reload()
 }
+
 
 

@@ -30,6 +30,7 @@ function pegarDados() {
 
 
 function gerarCartas(cartas){
+
     let carta = document.createElement("div")
     carta.setAttribute('class', 'card') 
     sessaoJogo.appendChild(carta)
@@ -38,7 +39,6 @@ function gerarCartas(cartas){
     if (acertos.includes(cartas.cor)) {
         carta.style.background = `url(../imagens/${cartas.img})`
     }
-
     //click
     carta.addEventListener('click', () => {
         carta.classList.toggle('virada')
@@ -80,11 +80,15 @@ function comparar(c1, c2, cor){
     },2000)
 }
 
-
+let sessaoFinal = document.querySelector('#finalizado')
 function fimDeJogo(){
-    console.log('final')
+    sessaoJogo.innerHTML = ' '
+    sessaoFinal.style.display = 'flex'
+}
+function reload(){
     location.reload()
 }
+
 
 
 

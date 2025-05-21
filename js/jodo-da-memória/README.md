@@ -9,3 +9,4 @@ Funcionalidades{
     Contador de jogadas;
     Efeito de animação ao virar as cartas.
     }
+

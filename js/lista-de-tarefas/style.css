@@ -3,31 +3,37 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 body{
-
+    background-color: rgb(197, 135, 255);
+    background-image: linear-gradient(to left,rgb(184, 118, 245), rgb(197, 135, 255), rgb(156, 92, 217));
 }
 header{
     text-align: center;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px white;
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: calc(100vh - 100px);
 }
+/*sessão input*/
 input#task{
+    appearance: ;
     padding: 10px;
     width: 50vw;
     border-radius: 10px;
     font-size: 1.1em;
 
-    background-color: rgb(255, 254, 182);
 }
 
 input#task:focus, input#task:valid {
-    background-color: rgb(255, 254, 182);
+    background-color: rgb(215, 251, 182);
 }
-button#btnAdd{
+/* input#btnAdd{
     padding: 10px;
     background-color: rgb(20, 251, 20);
     border-radius: 10px;
@@ -35,7 +41,65 @@ button#btnAdd{
 }
 #btnAdd:active{
     padding: 9px;
+} */
+
+
+/*sessão das tarefas*/
+label#novoItem{
+    width: 50vw;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 0;
+    background-color: rgba(112, 253, 253, 0.401);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
+label#novoItem > div#delete{
+    position: absolute;
+    width: 30px;
+    right: -35px;
+    top: -5px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(112, 253, 253, 0.401);
+    border: 1px solid gray;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: -27px;
+    top: 10px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(20, 251, 20);
+}
+input[type="checkbox"]:checked::before {
+    content: "✓";
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*rodapé*/
 footer{
     background-color: rgba(0, 0, 0, 0.438);
     color: white;

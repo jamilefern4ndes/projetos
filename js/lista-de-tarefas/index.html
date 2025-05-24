@@ -11,12 +11,12 @@
         <h1>TAREFAS DIÁRIAS</h1>
     </header>
     <main>
-        <section id="formarea">
-            <input type="text" name="task" id="task" placeholder="Nova Tarefa" autocomplete="off">
-            <button onclick="addTask()" id="btnAdd">Add</button>
-        </section>
-
-        <section id="taskArea">
+        <form class="formarea">
+            <input type="text" name="task" id="task" placeholder="Nova Tarefa (Enter p/ enviar)" autocomplete="off" onkeypress="enter(event)">
+            <!-- <input type="submit" value="add" onclick="addTask(event)" id="btnAdd" disabled> -->
+            <!-- <button onclick="addTask()" id="btnAdd" disabled>Add</button> -->
+        </form>
+        <section class="taskArea">
             
         </section>
     </main>

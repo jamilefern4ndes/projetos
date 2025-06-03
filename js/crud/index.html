@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <main>  
+        <div class="tbl">
+            <button id="bntNovoCliente" onclick="abrirForm()">Novo CLiente</button>
+            <p id="press">press "Space" p/ novo cadastro ou click em "Novo CLiente"</p>
+            <table>
+                <caption>CLIENTES</caption>
+                <thead scope="col">
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyForm">
+                     <!-- <tr>
+                        <td>Jão Sem Braço da silva</td>
+                        <td>jao@gmail.com</td>
+                        <td>(xx) xxxxx-xxxx</td>
+                        <td>cidade exemplo</td>
+                        <td id="acao">
+                            <button id="deleteClient" onclick="deleteClient()">excluir</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <section class="novoCliente">
+            <form id="client-form" autocomplete="off">
+                <p id="recado">press Tab p/ mover-se <br> ou Esc para cancelar</p>
+                        <p>
+                            <label for="nome">Nome</label>
+                            <input
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Nome do Cliente"
+                                class="entradaDados"
+                                autocomplete="new-password"
+                                required
+                            >
+                       
+                        <label for="email">E-mail</label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            placeholder="exemplo@gmail.com"
+                            class="entradaDados"
+                            autocomplete="new-password"
+                        >
+                     </p>
+                    <p>
+                        
+                            <label for="celular">Tel</label>
+                            <input
+                                type="tel"
+                                name="celular"
+                                id="celular"
+                                placeholder="(xx) x xxxx-xxxx"
+                                class="entradaDados"
+                                autocomplete="off"
+                                required
+                                minlength="10"
+                            >
+                            <label for="cidade">cidade</label>
+                             <input
+                                type="text"
+                                name="cidade"
+                                id="cidade"
+                                placeholder="cidade"
+                                class="entradaDados"
+                                autocomplete="off"
+                                required
+                            >
+                    </p>
+                <p class="btn-container">
+                    <input type="reset"
+                     value="limpar"
+                     id="inputReset"
+                     class="btnForm"
+                     >
+
+                    <input type="submit"
+                     value="cadastrar"
+                     id="inputSubmit"
+                     class="btnForm"
+                     >
+                </p>
+            </form>
+            <button id="closeForm">x</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

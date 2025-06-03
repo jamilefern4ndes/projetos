@@ -1,0 +1,147 @@
+@charset "UTF-8";
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    background-color: rgb(221, 221, 221);
+    height: 90vh;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+#bntNovoCliente{
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    padding: 2px 5px ;
+    color: #7FA8CD;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.435);
+}
+#bntNovoCliente:hover{
+    text-decoration: underline;
+}
+div .tbl{
+    overflow-x: auto;
+}
+div >p#press{
+    color:rgb(164, 164, 164);
+    text-align: center;
+    font-size: 12px;
+    font-family: monospace;
+
+}
+/* tabela */
+table{
+    margin-top: 10vh;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.124);
+}
+
+table > caption{
+    background-color: #7FA8CD;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px;
+    font-family:  Arial, Helvetica, sans-serif;
+    min-width: 600px;
+}
+table thead th{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 2px 5px;
+}
+
+table tbody tr td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    width: auto;
+    min-width: 150px;
+    padding: 3px 5px;
+    text-align: left;
+}
+td#acao{
+    text-align: center;
+}
+button#deleteClient{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+/* janelas */
+#recado{
+    color: gray;
+    text-align: center;
+    font-size: 12px;
+
+}
+.novoCliente{
+    position: absolute;
+    top: 20vh;
+    background-color: white;
+    min-width: 520px;
+    height: 200px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.170);
+    border-radius: 10px;
+    padding: 5px;
+}
+form p{
+    text-align: right;
+}
+.entradaDados{
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 1.1em;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btnForm{
+    border: none;
+    margin-top: 5px;
+    width: 90px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+#inputReset{
+    background-color: darkorange;
+}
+#inputSubmit{
+    background-color: green;
+}
+
+input #nome, #cidade{
+    text-transform: capitalize;
+}
+#closeForm{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border: none;
+}
+/* formularios */
+

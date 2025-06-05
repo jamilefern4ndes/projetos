@@ -24,32 +24,32 @@
                     </tr>
                 </thead>
                 <tbody id="bodyForm">
-                     <!-- <tr>
-                        <td>Jão Sem Braço da silva</td>
+                     
+                        <!-- <td style="text-transform: capitalize; font-weight:;">Jão Sem Braço da silva</td>
                         <td>jao@gmail.com</td>
                         <td>(xx) xxxxx-xxxx</td>
                         <td>cidade exemplo</td>
                         <td id="acao">
                             <button id="deleteClient" onclick="deleteClient()">excluir</button>
-                        </td>
-                    </tr> -->
+                        </td> -->
+                    
                 </tbody>
             </table>
         </div>
         <section class="novoCliente">
             <form id="client-form" autocomplete="off">
                 <p id="recado">press Tab p/ mover-se <br> ou Esc para cancelar</p>
-                        <p>
-                            <label for="nome">Nome</label>
-                            <input
-                                type="text"
-                                name="nome"
-                                id="nome"
-                                placeholder="Nome do Cliente"
-                                class="entradaDados"
-                                autocomplete="new-password"
-                                required
-                            >
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            name="nome"
+                            id="nome"
+                            placeholder="Nome do Cliente"
+                            class="entradaDados"
+                            autocomplete="new-password"
+                            required
+                        >
                        
                         <label for="email">E-mail</label>
                         <input
@@ -60,30 +60,29 @@
                             class="entradaDados"
                             autocomplete="new-password"
                         >
-                     </p>
+                    </p>
                     <p>
-                        
-                            <label for="celular">Tel</label>
+                        <label for="celular">Tel</label>
+                        <input
+                            type="tel"
+                            name="celular"
+                            id="celular"
+                            placeholder="(xx) x xxxx-xxxx"
+                            class="entradaDados"
+                            autocomplete="off"
+                            required
+                            minlength="10"
+                        >
+                        <label for="cidade">cidade</label>
                             <input
-                                type="tel"
-                                name="celular"
-                                id="celular"
-                                placeholder="(xx) x xxxx-xxxx"
-                                class="entradaDados"
-                                autocomplete="off"
-                                required
-                                minlength="10"
-                            >
-                            <label for="cidade">cidade</label>
-                             <input
-                                type="text"
-                                name="cidade"
-                                id="cidade"
-                                placeholder="cidade"
-                                class="entradaDados"
-                                autocomplete="off"
-                                required
-                            >
+                            type="text"
+                            name="cidade"
+                            id="cidade"
+                            placeholder="cidade"
+                            class="entradaDados"
+                            autocomplete="off"
+                            required
+                        >
                     </p>
                 <p class="btn-container">
                     <input type="reset"

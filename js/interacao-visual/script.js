@@ -1,15 +1,11 @@
-const niveis = document.querySelectorAll('.nivel')
-// for(let i = 0; i<niveis.length; i++){
-//     niveis[i].style.background = 'blue'
-// }
-const btnPrevious = document.querySelector('#previous')
-const btnNext     = document.querySelector('#next')
-let indice        = 0
+const niveis      = document.querySelectorAll('.nivel') //aray 
+const btnPrevious = document.querySelector('#previous') //botão anterior
+const btnNext     = document.querySelector('#next')     //botão próximo
+let indice = 0
 
 btnNext.addEventListener('click', ()=>{
     if(indice<=niveis.length-1){
-        niveis[indice].classList.remove('transparent')
-        niveis[indice].classList.add('blue')
+        niveis[indice].style.background = 'rgb(40, 80, 114)'
         indice ++ 
         verId()
     }
@@ -18,14 +14,11 @@ btnNext.addEventListener('click', ()=>{
 btnPrevious.addEventListener('click', ()=>{
     if(indice>0){
         indice--
-        niveis[indice].classList.remove('blue')
-        niveis[indice].classList.add('transparent')
+        niveis[indice].style.background = 'transparent'
         verId()
     }
-    
-    
 })
-
+//controle de funcionalidade
 function verId(){
     console.log(indice)
 }

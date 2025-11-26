@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(11, 11, 37);
+        }
+        main{
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        div.view{
+            display: flex;
+            flex-direction: row;
+
+            div{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid white;
+                margin: 30px;
+                text-align: center;
+                color: white;
+                transition: background 0.3s ease-in;
+            }
+
+        }
+        div.buttons{
+            display: flex;
+            justify-content: space-evenly;
+            width: 200px;
+
+            button{
+                width: 70px;
+                background-color: rgba(0, 55, 255, 0);
+                color: white;
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 4px;
+
+            }
+            button:active{
+                transform: translateY(-2px);
+            }
+        }
+        
+        .blue{
+            background-color: rgb(40, 80, 114);
+        }
+        .transparent{
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="view">
+            <div id="v1" class="nivel">1</div>
+            <div id="v2" class="nivel">2</div>
+            <div id="v3" class="nivel">3</div>
+            <div id="v4" class="nivel">4</div>
+        </div>
+        <div class="buttons">
+            <button id="previous">previous</button>
+            <button id="next">next</button>
+        </div>
+    </main>
+</body>
+<script src="script.js">
+
+</script>
+</html>
